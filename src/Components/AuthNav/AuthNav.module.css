@@ -5,10 +5,10 @@
 
 .link {
   text-decoration: none;
-  margin-left: 10px;
-  color: black;
+  margin-left: 16px;
+  color: var(--primary-color);
 }
 
 .activeLink {
-  color: cornflowerblue;
+  color: var(--activ-color);
 }

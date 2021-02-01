@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #9696fa;
+  --primary-color: rgb(150, 150, 250);
+  --activ-color: rgb(60, 60, 120);
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

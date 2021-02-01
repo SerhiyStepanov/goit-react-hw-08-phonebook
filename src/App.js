@@ -7,12 +7,20 @@ export default function App() {
   return (
     <Container>
       <AppBar />
-      <hr></hr>
+      <hr style={{ color: "var(--activ-color)" }}></hr>
       <Switch>
-        <Route path="/" exact></Route>
-        <Route path="/contacts"></Route>
-        <Route path="/register"></Route>
-        <Route path="/login"></Route>
+        <Route path="/" exact>
+          <h1>Головна</h1>
+        </Route>
+        <Route path="/contacts">
+          <h1>Контакти</h1>
+        </Route>
+        <Route path="/register">
+          <h1>Реєстрація</h1>
+        </Route>
+        <Route path="/login">
+          <h1>Логін</h1>
+        </Route>
       </Switch>
     </Container>
   );

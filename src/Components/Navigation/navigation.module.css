@@ -1,14 +1,15 @@
 .container {
   display: flex;
   margin-right: auto;
+  /* margin-right: 10px; */
 }
 
 .link {
   text-decoration: none;
-  margin-right: 10px;
-  color: black;
+  margin-right: 16px;
+  color: var(--primary-color);
 }
 
 .activeLink {
-  color: cornflowerblue;
+  color: var(--activ-color);
 }
