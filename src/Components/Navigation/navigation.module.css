@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  margin-right: auto;
+}
+
+.link {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+}
+
+.activeLink {
+  color: cornflowerblue;
+}
