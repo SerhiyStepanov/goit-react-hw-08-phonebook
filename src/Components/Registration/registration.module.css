@@ -10,23 +10,15 @@
   align-items: center;
 }
 
-.ioIosPhonePortrait {
-  display: block;
-  margin-left: 6px;
-  width: 14px;
-  height: 14px;
-  color: var(--primary-color);
+.input {
+  min-width: 200px;
+  outline-color: var(--primary-color);
 }
 
 .spanName {
   font-size: 12px;
   margin-left: 6px;
   color: var(--primary-color);
-}
-
-.input {
-  min-width: 200px;
-  outline-color: var(--primary-color);
 }
 
 .button {
