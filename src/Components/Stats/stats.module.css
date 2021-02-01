@@ -1,0 +1,7 @@
+.text {
+  color: var(--primary-color);
+}
+
+.span {
+  color: var(--activ-color);
+}

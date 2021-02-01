@@ -1,6 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import Container from "./Components/Container/index";
 import AppBar from "./Components/AppBar/AppBar";
+import ContactViews from "./Views/ContactViews";
 import "./App.css";
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
           <h1>Головна</h1>
         </Route>
         <Route path="/contacts">
-          <h1>Контакти</h1>
+          <ContactViews />
         </Route>
         <Route path="/register">
           <h1>Реєстрація</h1>

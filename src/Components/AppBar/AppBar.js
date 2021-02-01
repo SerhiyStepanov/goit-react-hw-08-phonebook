@@ -1,6 +1,6 @@
 import Navigation from "../Navigation/Navigation";
 import AuthNav from "../AuthNav/AuthNav";
-import s from "./AppBar.module.css";
+import s from "./appBar.module.css";
 
 export default function AppBar() {
   return (

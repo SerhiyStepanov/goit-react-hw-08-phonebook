@@ -1,0 +1,38 @@
+.contactList {
+  padding-left: 0;
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.list {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  width: 320px;
+  padding: 2px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.button {
+  padding: 4px 8px;
+  margin-left: auto;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--primary-color);
+  transition: transform 250ms var(--cubic), box-shadow 250ms var(--cubic);
+}
+
+.button:hover,
+.button:focus {
+  transform: scale(1.06);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
+  transition: transform 250ms var(--cubic), box-shadow 250ms var(--cubic);
+}
