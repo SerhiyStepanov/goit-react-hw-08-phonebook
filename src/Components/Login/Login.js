@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { login } from "../../Redux/UserAuth/auth-operations";
 import shortid from "shortid";
 import s from "./login.module.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -29,6 +32,9 @@ export default function Login() {
       alert("Enter email and password please ! ");
       return;
     }
+
+    dispatch(login({ email, password }));
+
     reset();
   };
 

@@ -1,5 +1,4 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import { combineReducers } from "redux";
 import {
   persistStore,
   persistReducer,
@@ -15,16 +14,10 @@ import contactReducer from "../Redux/Contacts/contacts-reducer";
 import authReducer from "../Redux/UserAuth/auth-slice";
 
 const persistConfig = {
-  key: "users",
+  key: "auth",
   storage,
   whitelist: ["token"],
 };
-
-// const rootReducer = combineReducers({
-//   user: persistReducer(persistConfig, authReducer),
-
-//   contacts: contactReducer,
-// });
 
 export const store = configureStore({
   reducer: {

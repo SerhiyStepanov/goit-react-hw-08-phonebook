@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-axios.defaults.baseURL = "https://goit-phonebook-api.herokuapi.com";
+axios.defaults.baseURL = "https://goit-phonebook-api.herokuapp.com";
 
 const token = {
   set(token) {
@@ -25,10 +25,18 @@ export const registr = createAsyncThunk("auth/registr", async (userRegistr) => {
 export const login = createAsyncThunk("auth/login", async (userRegistr) => {
   try {
     const response = await axios.post("/users/login", userRegistr);
+    token.set(response.data.token);
     return response.data;
   } catch (error) {
     return error.message;
   }
 });
 
-export const logOut = createAsyncThunk("auth/logOut");
+export const logOut = createAsyncThunk("auth/logOut", async () => {
+  try {
+    await axios.post("/users/logout");
+    token.unset();
+  } catch (error) {
+    return error.message;
+  }
+});
