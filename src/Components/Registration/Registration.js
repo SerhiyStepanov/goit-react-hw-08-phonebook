@@ -39,7 +39,7 @@ export default function Registration() {
       return;
     }
 
-    dispatch(registr({ name, email, password }));
+    dispatch(registr({ user: { name, email, password } }));
 
     reset();
   };
