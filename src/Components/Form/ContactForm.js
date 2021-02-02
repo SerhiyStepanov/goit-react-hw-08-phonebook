@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import * as operations from "../../Redux/Contacts/operations";
+import * as operations from "../../Redux/Contacts/contacts-operations";
 import { getAllContacts } from "../../Redux/Contacts/contacts-selectors";
 import { IoIosPhonePortrait } from "react-icons/io";
 import shortid from "shortid";

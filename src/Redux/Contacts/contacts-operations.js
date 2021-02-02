@@ -1,7 +1,7 @@
 import axios from "axios";
-import * as actions from "../../Redux/actions";
+import * as actions from "./contacts-actions";
 
-// axios.defaults.baseURL = "http://localhost:3030";
+axios.defaults.baseURL = "https://goit-phonebook-api.herokuapi.com";
 
 export const fetchContacts = () => (dispatch) => {
   dispatch(actions.fetchContactRequest());

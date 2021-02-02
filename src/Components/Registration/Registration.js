@@ -1,11 +1,14 @@
 import { useState } from "react";
-import s from "./registration.module.css";
+import { useDispatch } from "react-redux";
 import shortid from "shortid";
+import { registr } from "../../Redux/UserAuth/auth-operations";
+import s from "./registration.module.css";
 
 export default function Registration() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -35,6 +38,9 @@ export default function Registration() {
       alert("Enter name and email please ! ");
       return;
     }
+
+    dispatch(registr({ name, email, password }));
+
     reset();
   };
 

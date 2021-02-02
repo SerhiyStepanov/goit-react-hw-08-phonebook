@@ -39,6 +39,7 @@ export default function Login() {
 
   const loginEmailId = shortid.generate();
   const loginPasswordId = shortid.generate();
+
   return (
     <div>
       <b>Введіть будь ласка електронну почту та пароль</b>

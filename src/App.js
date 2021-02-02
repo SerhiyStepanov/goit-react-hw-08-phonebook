@@ -13,7 +13,7 @@ export default function App() {
       <hr style={{ color: "var(--activ-color)" }}></hr>
       <Switch>
         <Route path="/" exact>
-          <h1>Головна</h1>
+          <h1 style={{ textAlign: "center" }}>Головна сторінка</h1>
         </Route>
         <Route path="/contacts">
           <ContactViews />
