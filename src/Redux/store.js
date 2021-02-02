@@ -15,19 +15,22 @@ import contactReducer from "../Redux/Contacts/contacts-reducer";
 import authReducer from "../Redux/UserAuth/auth-slice";
 
 const persistConfig = {
-  key: "auth",
+  key: "users",
   storage,
   whitelist: ["token"],
 };
 
-const rootReducer = combineReducers({
-  users: persistReducer(persistConfig, authReducer),
+// const rootReducer = combineReducers({
+//   user: persistReducer(persistConfig, authReducer),
 
-  contacts: contactReducer,
-});
+//   contacts: contactReducer,
+// });
 
 export const store = configureStore({
-  reducer: rootReducer,
+  reducer: {
+    users: persistReducer(persistConfig, authReducer),
+    contacts: contactReducer,
+  },
   middleware: getDefaultMiddleware({
     serializableCheck: {
       ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
