@@ -3,6 +3,7 @@ import Container from "./Components/Container/index";
 import AppBar from "./Components/AppBar/AppBar";
 import ContactViews from "./Views/ContactViews";
 import RegisterViews from "./Views/RegisterViews";
+import LoginViews from "./Views/LoginViews";
 import "./App.css";
 
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
           <RegisterViews />
         </Route>
         <Route path="/login">
-          <h1>Логін</h1>
+          <LoginViews />
         </Route>
       </Switch>
     </Container>

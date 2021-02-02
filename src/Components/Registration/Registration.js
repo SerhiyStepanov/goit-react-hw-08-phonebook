@@ -50,7 +50,7 @@ export default function Registration() {
 
   return (
     <div>
-      <h2>Стopінка реєстрації</h2>
+      <b>Зареєструйтесь будь ласка</b>
       <form onSubmit={onFormSubmit}>
         <div className={s.container}>
           <label htmlFor={registrNameId} className={s.label}>
