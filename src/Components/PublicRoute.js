@@ -4,7 +4,7 @@ import { getUserIsLoggedIn } from "../Redux/UserAuth/auth-selectors";
 
 export default function PublicRoute({
   children,
-  redirectedTo = "/contacts",
+  redirectedTo = "/",
   restricted = false,
   ...routeProps
 }) {

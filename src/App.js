@@ -39,7 +39,7 @@ export default function App() {
             <PublicRoute path="/register" restricted>
               <RegisterViews />
             </PublicRoute>
-            <PublicRoute path="/login" restricted>
+            <PublicRoute path="/login" redirectedTo="/contacts" restricted>
               <LoginViews />
             </PublicRoute>
           </Suspense>

@@ -104,7 +104,7 @@ export default function Registration() {
             id={registrPasswordId}
             className={s.input}
             onChange={handleChange}
-            placeholder="Enter password"
+            placeholder="Enter min seven symbol"
             autoComplete="Off"
           />
         </div>
