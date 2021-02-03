@@ -5,6 +5,7 @@ import { getAllContacts } from "../../Redux/Contacts/contacts-selectors";
 import { IoIosPhonePortrait } from "react-icons/io";
 import shortid from "shortid";
 import s from "./form.module.css";
+import { FaFeatherAlt } from "react-icons/fa";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -93,6 +94,9 @@ export default function ContactForm() {
 
         <button type="submit" className={s.button}>
           Add contact
+          <span>
+            <FaFeatherAlt style={{ marginLeft: 8, display: "flex" }} />
+          </span>
         </button>
       </form>
     </>

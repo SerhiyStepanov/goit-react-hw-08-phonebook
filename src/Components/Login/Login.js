@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { login } from "../../Redux/UserAuth/auth-operations";
 import shortid from "shortid";
 import s from "./login.module.css";
+import { FaSignInAlt } from "react-icons/fa";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -83,6 +84,9 @@ export default function Login() {
         </div>
         <button type="submit" className={s.button}>
           Увійти
+          <span>
+            <FaSignInAlt style={{ marginLeft: 8, display: "flex" }} />
+          </span>
         </button>
       </form>
     </div>

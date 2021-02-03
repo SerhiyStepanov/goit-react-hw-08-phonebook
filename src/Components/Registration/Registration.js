@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import shortid from "shortid";
 import { registr } from "../../Redux/UserAuth/auth-operations";
 import s from "./registration.module.css";
+import { FaRegPaperPlane } from "react-icons/fa";
 
 export default function Registration() {
   const [name, setName] = useState("");
@@ -110,6 +111,9 @@ export default function Registration() {
         </div>
         <button type="submit" className={s.button}>
           Зареєструватись
+          <span>
+            <FaRegPaperPlane style={{ marginLeft: 8, display: "flex" }} />
+          </span>
         </button>
       </form>
     </div>

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import * as operations from "../../Redux/Contacts/contacts-operations";
 import { getVisibleContacts } from "../../Redux/Contacts/contacts-selectors";
 import s from "./contactList.module.css";
+import { FaTrash } from "react-icons/fa";
 
 export default function ContactList() {
   const items = useSelector((state) => getVisibleContacts(state));
@@ -30,6 +31,9 @@ export default function ContactList() {
               onClick={() => onDeleteContact(id)}
             >
               delete
+              <span>
+                <FaTrash style={{ marginLeft: 8, display: "flex" }} />
+              </span>
             </button>
           </li>
         ))}
