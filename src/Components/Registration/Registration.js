@@ -70,7 +70,7 @@ export default function Registration() {
             id={registrNameId}
             className={s.input}
             onChange={handleChange}
-            placeholder="Enter name"
+            placeholder="Enter min seven symbol"
             autoComplete="Off"
           />
         </div>
