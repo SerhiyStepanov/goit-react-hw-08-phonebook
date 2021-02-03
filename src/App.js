@@ -1,30 +1,50 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
+import { lazy, Suspense, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCurrentUser } from "./Redux/UserAuth/auth-operations";
+import PrivateRoute from "./Components/PrivateRoute";
+import PublicRoute from "./Components/PublicRoute";
+import { getIsFetchingCurrentUser } from "./Redux/UserAuth/auth-selectors";
 import Container from "./Components/Container/index";
 import AppBar from "./Components/AppBar/AppBar";
-import ContactViews from "./Views/ContactViews";
-import RegisterViews from "./Views/RegisterViews";
-import LoginViews from "./Views/LoginViews";
-import "./App.css";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loaded from "./Components/Loader";
+import "./App.module.css";
+
+const HomeViews = lazy(() => import("./Views/HomeViews"));
+const ContactViews = lazy(() => import("./Views/ContactViews"));
+const RegisterViews = lazy(() => import("./Views/RegisterViews"));
+const LoginViews = lazy(() => import("./Views/LoginViews"));
 
 export default function App() {
+  const isFetchingCurrentUser = useSelector(getIsFetchingCurrentUser);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCurrentUser());
+  }, [dispatch]);
   return (
-    <Container>
-      <AppBar />
-      <hr style={{ color: "var(--activ-color)" }}></hr>
-      <Switch>
-        <Route path="/" exact>
-          <h1 style={{ textAlign: "center" }}>Головна сторінка</h1>
-        </Route>
-        <Route path="/contacts">
-          <ContactViews />
-        </Route>
-        <Route path="/register">
-          <RegisterViews />
-        </Route>
-        <Route path="/login">
-          <LoginViews />
-        </Route>
-      </Switch>
-    </Container>
+    !isFetchingCurrentUser && (
+      <Container>
+        <AppBar />
+        <hr></hr>
+        <Switch>
+          <Suspense fallback={<Loaded />}>
+            <PublicRoute path="/" exact>
+              <HomeViews />
+            </PublicRoute>
+            <PrivateRoute path="/contacts">
+              <ContactViews />
+            </PrivateRoute>
+            <PublicRoute path="/register" restricted>
+              <RegisterViews />
+            </PublicRoute>
+            <PublicRoute path="/login" restricted>
+              <LoginViews />
+            </PublicRoute>
+          </Suspense>
+        </Switch>
+      </Container>
+    )
   );
 }
