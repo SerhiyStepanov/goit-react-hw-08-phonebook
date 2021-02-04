@@ -1,6 +1,7 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .button {
@@ -27,6 +28,6 @@
 
 .span {
   font-size: 14px;
-  margin-left: 6px;
+  margin-left: 16px;
   color: var(--primary-color);
 }

@@ -8,7 +8,7 @@ export default function AuthNav() {
       <span>
         <FiUserX tyle={{ display: "flex" }} />
       </span>
-      <nav className={s.container}>
+      <nav>
         <NavLink
           to="/register"
           exact
