@@ -31,3 +31,12 @@
   margin-left: 16px;
   color: var(--primary-color);
 }
+
+.avatar {
+  display: flex;
+  font-size: 20px;
+  padding: 2px;
+  border: 1px solid var(--activ-color);
+  border-radius: 50%;
+  color: var(--activ-color);
+}

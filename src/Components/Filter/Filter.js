@@ -3,6 +3,7 @@ import shortid from "shortid";
 import { useSelector, useDispatch } from "react-redux";
 import { getFilter } from "../../Redux/Contacts/contacts-selectors";
 import actions from "../../Redux/Contacts/contacts-actions";
+import { FaSistrix } from "react-icons/fa";
 import s from "./filter.module.css";
 
 export default function Filter() {
@@ -15,7 +16,10 @@ export default function Filter() {
   return (
     <div className={s.container}>
       <label htmlFor={inputFilterId} className={s.label}>
-        Find contacts of name
+        Find contacts
+        <span>
+          <FaSistrix className={s.find} />
+        </span>
       </label>
       <input
         type="text"

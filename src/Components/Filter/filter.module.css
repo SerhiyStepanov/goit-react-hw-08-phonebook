@@ -9,15 +9,14 @@
   margin-bottom: 4px;
 }
 
-.fiSearch {
-  display: inline-block;
-  margin-left: 6px;
-  width: 14px;
-  height: 14px;
-  color: var(--primary-color);
-}
-
 .input {
   min-width: 200px;
   outline-color: var(--primary-color);
+}
+
+.find {
+  display: flex;
+  margin-left: 6px;
+  font-size: 20px;
+  color: var(--primary-color);
 }

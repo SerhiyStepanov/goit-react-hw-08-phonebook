@@ -6,7 +6,7 @@ export default function AuthNav() {
   return (
     <div className={s.container}>
       <span>
-        <FiUserX tyle={{ display: "flex" }} />
+        <FiUserX className={s.avatar} />
       </span>
       <nav>
         <NavLink
