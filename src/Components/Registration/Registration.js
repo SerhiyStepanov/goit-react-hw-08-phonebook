@@ -105,6 +105,8 @@ export default function Registration() {
             id={registrPasswordId}
             className={s.input}
             onChange={handleChange}
+            required
+            minlength="7"
             placeholder="Enter min seven symbol"
             autoComplete="Off"
           />
