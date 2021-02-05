@@ -89,6 +89,8 @@ export default function ContactForm() {
             onChange={onInputChange}
             className={s.input}
             placeholder="Enter number"
+            pattern="\d*"
+            minLength="10"
           />
         </div>
 
