@@ -40,3 +40,9 @@
   border-radius: 50%;
   color: var(--activ-color);
 }
+
+.avatar:hover,
+.avatar:focus {
+  color: #33ff00;
+  border: 1px solid #33ff00;
+}

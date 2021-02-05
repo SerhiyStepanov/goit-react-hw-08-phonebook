@@ -24,3 +24,9 @@
   border-radius: 50%;
   color: var(--activ-color);
 }
+
+.avatar:hover,
+.avatar:focus {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
