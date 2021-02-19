@@ -79,7 +79,7 @@ export default function Registration() {
         <div className={s.container}>
           <label htmlFor={registrPostId} className={s.label}>
             Email
-            <span className={s.spanName}>Почта</span>
+            <span className={s.spanName}>Електронна адреса</span>
           </label>
           <input
             type="email"

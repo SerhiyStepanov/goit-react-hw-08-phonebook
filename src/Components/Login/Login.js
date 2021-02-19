@@ -49,11 +49,11 @@ export default function Login() {
 
   return (
     <div>
-      <b>Введіть будь ласка електронну почту та пароль</b>
+      <b>Введіть будь ласка електронну пошту та пароль</b>
       <form onSubmit={onFormSubmit}>
         <div className={s.container}>
           <label htmlFor={loginEmailId} className={s.label}>
-            Email<span className={s.spanName}>Почта</span>
+            Email<span className={s.spanName}>Електронна адреса</span>
           </label>
           <input
             type="email"
