@@ -20,13 +20,7 @@
   display: flex;
   font-size: 20px;
   padding: 2px;
-  border: 1px solid var(--activ-color);
   border-radius: 50%;
-  color: var(--activ-color);
-}
-
-.avatar:hover,
-.avatar:focus {
   color: #ff0000;
   border: 1px solid #ff0000;
 }

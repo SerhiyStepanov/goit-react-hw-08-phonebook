@@ -83,7 +83,7 @@ export default function Login() {
           />
         </div>
         <button type="submit" className={s.button}>
-          Увійти
+          <span className={s.sp}>Увійти</span>
           <span>
             <FaSignInAlt style={{ marginLeft: 8, display: "flex" }} />
           </span>

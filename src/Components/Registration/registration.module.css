@@ -26,7 +26,7 @@
   align-items: center;
   padding: 4px 8px;
   margin-left: 10px;
-  font-family: Unkempt;
+  font-family: var(--font-family);
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -38,7 +38,14 @@
 
 .button:hover,
 .button:focus {
+  color: var(--primary-color);
+  background-color: #fff;
   transform: scale(1.06);
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
-  transition: transform 250ms var(--cubic), box-shadow 250ms var(--cubic);
+  transition: transform 250ms var(--cubic), box-shadow 250ms var(--cubic),
+    background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+
+.sp {
+  font-family: Unkempt;
 }

@@ -6,9 +6,9 @@ import ContactList from "../Components/ContactList";
 export default function ContactViews() {
   return (
     <div>
-      <h1 style={{ fontFamily: "Unkempt" }}>Phonebook</h1>
+      <h1 style={{ fontFamily: "Unkempt", textAlign: "center" }}>Phonebook</h1>
       <ContactForm />
-      <h2 style={{ fontFamily: "Unkempt" }}>Contacts</h2>
+      <h2 style={{ fontFamily: "Unkempt", textAlign: "center" }}>Contacts</h2>
       <Filter />
       <Stats />
       <ContactList />

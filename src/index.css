@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap");
 
 :root {
-  --primary-color: rgb(150, 150, 250);
-  --activ-color: rgb(60, 60, 120);
+  --primary-color: rgb(130, 130, 230);
+  --activ-color: rgb(65, 65, 120);
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --font-family: url("https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap");
 }
 
 body {

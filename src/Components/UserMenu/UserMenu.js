@@ -19,7 +19,7 @@ export default function UserMenu() {
         type="button"
         onClick={() => dispatch(logOut())}
       >
-        Вийти
+        <span className={s.sp}>Вийти</span>
         <span>
           <FaSignOutAlt style={{ marginLeft: 8, display: "flex" }} />
         </span>

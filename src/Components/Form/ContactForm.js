@@ -88,14 +88,15 @@ export default function ContactForm() {
             value={number}
             onChange={onInputChange}
             className={s.input}
-            placeholder="Enter number"
-            pattern="\d*"
+            placeholder="Enter XXX-XXX-XXXX"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            // pattern="\d*"
             minLength="10"
           />
         </div>
 
         <button type="submit" className={s.button}>
-          Add contact
+          Додати
           <span>
             <FaFeatherAlt style={{ marginLeft: 8, display: "flex" }} />
           </span>

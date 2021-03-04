@@ -112,7 +112,7 @@ export default function Registration() {
           />
         </div>
         <button type="submit" className={s.button}>
-          Зареєструватись
+          <span className={s.sp}>Зареєструватись</span>
           <span>
             <FaRegPaperPlane style={{ marginLeft: 8, display: "flex" }} />
           </span>

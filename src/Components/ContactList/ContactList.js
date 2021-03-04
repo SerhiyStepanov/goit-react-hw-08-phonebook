@@ -30,7 +30,7 @@ export default function ContactList() {
               type="button"
               onClick={() => onDeleteContact(id)}
             >
-              delete
+              Видалити
               <span>
                 <FaTrash style={{ marginLeft: 8, display: "flex" }} />
               </span>
