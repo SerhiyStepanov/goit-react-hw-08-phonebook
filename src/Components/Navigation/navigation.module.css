@@ -5,11 +5,18 @@
 }
 
 .link {
+  display: inline-flex;
   text-decoration: none;
   margin-right: 16px;
   color: var(--primary-color);
 }
 
 .activeLink {
-  color: var(--activ-color);
+  color: var(--orange-color);
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+  color: var(--orange-color);
 }

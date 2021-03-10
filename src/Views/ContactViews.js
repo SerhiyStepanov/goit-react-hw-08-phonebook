@@ -2,16 +2,32 @@ import ContactForm from "../Components/Form";
 import Filter from "../Components/Filter";
 import Stats from "../Components/Stats";
 import ContactList from "../Components/ContactList";
+import ThumbRepeat from "../Components/ThumbRepeat/ThumbRepeat";
 
 export default function ContactViews() {
   return (
     <div>
-      <h1 style={{ fontFamily: "Unkempt", textAlign: "center" }}>Phonebook</h1>
+      <ThumbRepeat>
+        <h1
+          style={{
+            margin: "0px",
+            fontFamily: "Unkempt",
+            textAlign: "center",
+            color: "#fffadc",
+          }}
+        >
+          Phonebook
+        </h1>
+      </ThumbRepeat>
+
       <ContactForm />
-      <h2 style={{ fontFamily: "Unkempt", textAlign: "center" }}>Contacts</h2>
+      <h2 style={{ fontFamily: "Unkempt", textAlign: "center" }}>
+        Find contacts
+      </h2>
       <Filter />
-      <Stats />
+      <h2 style={{ fontFamily: "Unkempt", textAlign: "center" }}>Contacts</h2>
       <ContactList />
+      <Stats />
     </div>
   );
 }

@@ -7,15 +7,19 @@
 }
 
 .list {
-  padding-left: 0;
+  margin-bottom: 6px;
   display: flex;
+  flex-grow: 1;
   align-items: center;
-  width: 320px;
+  justify-content: space-between;
+  width: 100%;
   padding: 2px;
 }
 
 .text {
-  font-size: 14px;
+  display: inline-flex;
+  font-size: 16px;
+  margin: 0;
 }
 
 .button {
@@ -41,4 +45,17 @@
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
   transition: transform 250ms var(--cubic), box-shadow 250ms var(--cubic),
     background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+
+.dotten {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  height: 1px;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-self: flex-end;
+
+  background: rgba(130, 130, 230, 0.5);
 }

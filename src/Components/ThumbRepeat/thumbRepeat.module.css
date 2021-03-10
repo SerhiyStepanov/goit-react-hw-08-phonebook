@@ -1,0 +1,14 @@
+.thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 6px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--primary-color),
+    var(--primary-color) 16px,
+    var(--activ-color) 16px,
+    var(--activ-color) 32px
+  );
+}

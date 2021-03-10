@@ -23,8 +23,9 @@ export default function ContactList() {
         items.map(({ name, number, id }) => (
           <li key={id} className={s.list}>
             <p className={s.text}>
-              {name} : {number}
+              {name}: {number}
             </p>
+            <span className={s.dotten}></span>
             <button
               className={s.button}
               type="button"

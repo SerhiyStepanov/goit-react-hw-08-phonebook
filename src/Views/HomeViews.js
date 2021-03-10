@@ -1,9 +1,21 @@
 import { FaBook } from "react-icons/fa";
+import ThumbRepeat from "../Components/ThumbRepeat/ThumbRepeat";
 
 export default function HomeViews() {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Головна сторінка</h1>
+      <ThumbRepeat>
+        <h1
+          style={{
+            margin: "0px",
+            fontFamily: "Unkempt",
+            textAlign: "center",
+            color: "#fffadc",
+          }}
+        >
+          Головна сторінка
+        </h1>
+      </ThumbRepeat>
 
       <FaBook
         style={{
@@ -13,15 +25,21 @@ export default function HomeViews() {
           marginLeft: "auto",
           marginRight: "auto",
           marginBottom: "30px",
-          color: "var(--primary-color)",
+          color: "var(--activ-color)",
         }}
       />
 
-      <p>Якщо ви бажаєте отримати доступ до контактів:</p>
-      <ol>
-        <li>Зареєструйтесь.</li>
-        <li>Введіть логін.</li>
-      </ol>
+      <p style={{ color: "var(--activ-color)" }}>
+        Якщо ви бажаєте отримати доступ до контактів:
+      </p>
+      <ul>
+        <li style={{ color: "var(--activ-color)" }}>
+          <p style={{ color: "var(--activ-color)" }}>Зареєструйтесь.</p>
+        </li>
+        <li style={{ color: "var(--activ-color)" }}>
+          <p style={{ color: "var(--activ-color)" }}>Введіть логін.</p>
+        </li>
+      </ul>
     </div>
   );
 }

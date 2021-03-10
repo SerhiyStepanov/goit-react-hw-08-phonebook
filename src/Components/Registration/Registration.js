@@ -56,9 +56,9 @@ export default function Registration() {
   const registrPasswordId = shortid.generate();
 
   return (
-    <div>
+    <div className={s.thumb}>
       <b>Зареєструйтесь будь ласка</b>
-      <form onSubmit={onFormSubmit}>
+      <form className={s.form} onSubmit={onFormSubmit}>
         <div className={s.container}>
           <label htmlFor={registrNameId} className={s.label}>
             Name

@@ -48,9 +48,12 @@ export default function Login() {
   const loginPasswordId = shortid.generate();
 
   return (
-    <div>
-      <b>Введіть будь ласка електронну пошту та пароль</b>
-      <form onSubmit={onFormSubmit}>
+    <div className={s.thumb}>
+      <b>
+        Введіть будь ласка <br />
+        електронну пошту та пароль
+      </b>
+      <form className={s.form} onSubmit={onFormSubmit}>
         <div className={s.container}>
           <label htmlFor={loginEmailId} className={s.label}>
             Email<span className={s.spanName}>Електронна адреса</span>

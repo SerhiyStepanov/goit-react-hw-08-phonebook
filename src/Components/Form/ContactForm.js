@@ -57,7 +57,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <form onSubmit={onFormSubmit}>
+      <form className={s.form} onSubmit={onFormSubmit}>
         <div className={s.container}>
           <label htmlFor={inputNameId} className={s.label}>
             Name <span className={s.spanName}>name</span>

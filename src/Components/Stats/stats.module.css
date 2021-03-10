@@ -1,7 +1,14 @@
+.container {
+  display: block;
+  margin: 10px;
+}
+
 .text {
-  color: var(--primary-color);
+  margin: 0;
+  text-align: center;
+  color: var(--activ-color);
 }
 
 .span {
-  color: var(--activ-color);
+  color: var(--primary-color);
 }

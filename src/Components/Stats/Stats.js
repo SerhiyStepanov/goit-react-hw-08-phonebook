@@ -5,7 +5,7 @@ import s from "./stats.module.css";
 export default function Stats() {
   const total = useSelector((state) => getAllContactsLength(state));
   return (
-    <div>
+    <div className={s.container}>
       <p className={s.text}>
         Total contact : <span className={s.span}>{total}</span>
       </p>

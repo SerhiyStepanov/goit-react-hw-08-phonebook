@@ -27,7 +27,7 @@ export default function Filter() {
         onChange={onChange}
         id={inputFilterId}
         className={s.input}
-        placeholder="Enter name please"
+        placeholder="Enter name"
       />
     </div>
   );
