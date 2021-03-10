@@ -6,9 +6,25 @@
 
 .link {
   display: inline-flex;
+  position: relative;
   text-decoration: none;
   margin-right: 16px;
   color: var(--primary-color);
+}
+
+.link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--orange-color);
+  border-radius: 2px;
+
+  /* transform: scaleX(0); */
+  transition: width 300ms var(--cubic);
 }
 
 .activeLink {
@@ -17,6 +33,12 @@
 
 .link:hover,
 .link:focus {
-  text-decoration: underline;
   color: var(--orange-color);
+}
+
+.link:hover:after,
+.link:focus:after {
+  width: 100%;
+  /* transform: scaleX(1); */
+  transition: width 300ms var(--cubic);
 }
