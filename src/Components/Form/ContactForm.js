@@ -96,7 +96,7 @@ export default function ContactForm() {
         </div>
 
         <button type="submit" className={s.button}>
-          Додати
+          Add
           <span>
             <FaFeatherAlt style={{ marginLeft: 8, display: "flex" }} />
           </span>
