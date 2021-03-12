@@ -88,9 +88,9 @@ export default function ContactForm() {
             value={number}
             onChange={onInputChange}
             className={s.input}
-            placeholder="Enter XXX-XXX-XXXX"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            // pattern="\d*"
+            placeholder=" XXX XXX XXXX "
+            // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            pattern="\d{3} \d{3} \d{4}"
             minLength="10"
           />
         </div>

@@ -40,6 +40,10 @@
   border-bottom: 1px solid var(--primary-color);
 }
 
+.input:invalid {
+  border-bottom: 1px solid red;
+}
+
 .button {
   display: inline-flex;
   align-items: center;

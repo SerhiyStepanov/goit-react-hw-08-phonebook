@@ -34,6 +34,10 @@
   border-bottom: 1px solid var(--primary-color);
 }
 
+.input:invalid {
+  border-bottom: 1px solid red;
+}
+
 .spanName {
   font-size: 12px;
   margin-left: 6px;

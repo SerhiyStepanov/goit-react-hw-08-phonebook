@@ -71,7 +71,7 @@ export default function Registration() {
             id={registrNameId}
             className={s.input}
             onChange={handleChange}
-            placeholder="Enter min seven symbol"
+            placeholder="Enter name"
             autoComplete="Off"
           />
         </div>
@@ -105,10 +105,11 @@ export default function Registration() {
             id={registrPasswordId}
             className={s.input}
             onChange={handleChange}
-            placeholder="Enter min seven symbol"
+            placeholder="Enter min eight numbers "
             autoComplete="Off"
-            required
-            min="7"
+            pattern="\d{8}"
+            // required
+            // min="8"
           />
         </div>
         <button type="submit" className={s.button}>
