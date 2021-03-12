@@ -22,7 +22,7 @@ export default function ContactViews() {
 
       <ContactForm />
       <h2 style={{ fontFamily: "Unkempt", textAlign: "center" }}>
-        Find contacts
+        Find contact
       </h2>
       <Filter />
       <h2 style={{ fontFamily: "Unkempt", textAlign: "center" }}>Contacts</h2>

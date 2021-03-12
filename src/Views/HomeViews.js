@@ -13,7 +13,7 @@ export default function HomeViews() {
             color: "#fffadc",
           }}
         >
-          Головна сторінка
+          Home page
         </h1>
       </ThumbRepeat>
 
@@ -30,14 +30,14 @@ export default function HomeViews() {
       />
 
       <p style={{ color: "var(--activ-color)" }}>
-        Якщо ви бажаєте отримати доступ до контактів:
+        If you want to access contacts:
       </p>
       <ul>
         <li style={{ color: "var(--activ-color)" }}>
-          <p style={{ color: "var(--activ-color)" }}>Зареєструйтесь.</p>
+          <p style={{ color: "var(--activ-color)" }}>Register.</p>
         </li>
         <li style={{ color: "var(--activ-color)" }}>
-          <p style={{ color: "var(--activ-color)" }}>Введіть логін.</p>
+          <p style={{ color: "var(--activ-color)" }}>Login.</p>
         </li>
       </ul>
     </div>

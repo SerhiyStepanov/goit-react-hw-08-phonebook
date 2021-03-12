@@ -57,7 +57,7 @@ export default function Registration() {
 
   return (
     <div className={s.thumb}>
-      <b>Зареєструйтесь будь ласка</b>
+      <b>Please register </b>
       <form className={s.form} onSubmit={onFormSubmit}>
         <div className={s.container}>
           <label htmlFor={registrNameId} className={s.label}>
@@ -112,7 +112,7 @@ export default function Registration() {
           />
         </div>
         <button type="submit" className={s.button}>
-          <span className={s.sp}>Зареєструватись</span>
+          <span className={s.sp}>Send</span>
           <span>
             <FaRegPaperPlane style={{ marginLeft: 8, display: "flex" }} />
           </span>

@@ -7,7 +7,7 @@ export default function Stats() {
   return (
     <div className={s.container}>
       <p className={s.text}>
-        Total contact : <span className={s.span}>{total}</span>
+        Total contacts: <span className={s.span}>{total}.</span>
       </p>
     </div>
   );

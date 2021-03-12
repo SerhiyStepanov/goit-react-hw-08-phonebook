@@ -50,8 +50,8 @@ export default function Login() {
   return (
     <div className={s.thumb}>
       <b>
-        Введіть будь ласка <br />
-        електронну пошту та пароль
+        Enter please email and password
+        <br />
       </b>
       <form className={s.form} onSubmit={onFormSubmit}>
         <div className={s.container}>
@@ -86,7 +86,7 @@ export default function Login() {
           />
         </div>
         <button type="submit" className={s.button}>
-          <span className={s.sp}>Увійти</span>
+          <span className={s.sp}>Login</span>
           <span>
             <FaSignInAlt style={{ marginLeft: 8, display: "flex" }} />
           </span>

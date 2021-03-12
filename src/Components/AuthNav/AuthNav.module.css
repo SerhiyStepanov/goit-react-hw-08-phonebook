@@ -11,6 +11,7 @@
   position: relative;
   margin-left: 16px;
   color: var(--primary-color);
+  outline: none;
   /* overflow: hidden; */
 }
 

@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <nav className={s.container}>
       <NavLink to="/" exact className={s.link} activeClassName={s.activeLink}>
-        Головна
+        Home
       </NavLink>
 
       {isLoggedIn && (
@@ -18,7 +18,7 @@ export default function Navigation() {
           className={s.link}
           activeClassName={s.activeLink}
         >
-          Контакти
+          Contacts
         </NavLink>
       )}
     </nav>

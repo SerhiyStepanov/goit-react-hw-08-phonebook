@@ -16,7 +16,7 @@ export default function Filter() {
   return (
     <div className={s.container}>
       <label htmlFor={inputFilterId} className={s.label}>
-        Find contacts
+        Find contact
         <span>
           <FaSistrix className={s.find} />
         </span>

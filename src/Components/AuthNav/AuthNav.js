@@ -15,7 +15,7 @@ export default function AuthNav() {
           className={s.link}
           activeClassName={s.activeLink}
         >
-          Реєстрація
+          Registration
         </NavLink>
         <NavLink
           to="/login"
@@ -23,7 +23,7 @@ export default function AuthNav() {
           className={s.link}
           activeClassName={s.activeLink}
         >
-          Логін
+          Login
         </NavLink>
       </nav>
     </div>
