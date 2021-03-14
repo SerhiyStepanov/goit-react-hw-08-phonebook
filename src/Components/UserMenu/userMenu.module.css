@@ -47,10 +47,7 @@
 .avatar {
   display: flex;
   font-size: 20px;
-  padding: 2px;
-  border-radius: 50%;
   color: #33ff00;
-  border: 1px solid #33ff00;
 }
 
 .sp {

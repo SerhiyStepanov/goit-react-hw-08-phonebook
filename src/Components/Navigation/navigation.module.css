@@ -1,7 +1,6 @@
 .container {
   display: flex;
   margin-right: auto;
-  /* margin-right: 10px; */
 }
 
 .link {
@@ -9,6 +8,7 @@
   position: relative;
   text-decoration: none;
   margin-right: 16px;
+  font-weight: 600;
   color: var(--primary-color);
   outline: none;
 }
