@@ -27,7 +27,7 @@ export default function App() {
     !isFetchingCurrentUser && (
       <Container>
         <AppBar />
-        <hr></hr>
+        <hr style={{ color: "#303030" }}></hr>
         <Switch>
           <Suspense fallback={<Loaded />}>
             <PublicRoute path="/" exact>

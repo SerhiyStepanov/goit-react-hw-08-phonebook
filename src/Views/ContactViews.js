@@ -21,11 +21,17 @@ export default function ContactViews() {
       </ThumbRepeat>
 
       <ContactForm />
-      <h2 style={{ fontFamily: "Unkempt", textAlign: "center" }}>
+      <h2
+        style={{ fontFamily: "Unkempt", textAlign: "center", color: "#303030" }}
+      >
         Find contact
       </h2>
       <Filter />
-      <h2 style={{ fontFamily: "Unkempt", textAlign: "center" }}>Contacts</h2>
+      <h2
+        style={{ fontFamily: "Unkempt", textAlign: "center", color: "#303030" }}
+      >
+        Contacts
+      </h2>
       <ContactList />
       <Stats />
     </div>

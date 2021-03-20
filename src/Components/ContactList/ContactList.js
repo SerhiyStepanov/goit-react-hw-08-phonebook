@@ -20,24 +20,26 @@ export default function ContactList() {
   return (
     <ul className={s.contactList}>
       {items.length > 0 &&
-        items.map(({ name, number, id }) => (
-          <li key={id} className={s.list}>
-            <p className={s.text}>
-              {name}: {number}
-            </p>
-            <span className={s.dotten}></span>
-            <button
-              className={s.button}
-              type="button"
-              onClick={() => onDeleteContact(id)}
-            >
-              Delete
-              <span>
-                <FaTrash style={{ marginLeft: 8, display: "flex" }} />
-              </span>
-            </button>
-          </li>
-        ))}
+        items
+          .sort((a, b) => a.name > b.name)
+          .map(({ name, number, id }) => (
+            <li key={id} className={s.list}>
+              <p className={s.text}>
+                {name}: {number}
+              </p>
+              <span className={s.dotten}></span>
+              <button
+                className={s.button}
+                type="button"
+                onClick={() => onDeleteContact(id)}
+              >
+                <span className={s.descr}>Delete</span>
+                <span>
+                  <FaTrash style={{ marginLeft: 8, display: "flex" }} />
+                </span>
+              </button>
+            </li>
+          ))}
     </ul>
   );
 }

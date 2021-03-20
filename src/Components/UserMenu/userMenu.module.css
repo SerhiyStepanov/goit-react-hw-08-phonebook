@@ -35,7 +35,7 @@
   display: none;
   font-size: 14px;
   margin-left: 16px;
-  color: var(--primary-color);
+  color: #303030;
 }
 
 @media screen and (min-width: 768px) {
