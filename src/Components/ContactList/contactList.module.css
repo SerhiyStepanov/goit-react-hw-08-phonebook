@@ -1,5 +1,20 @@
 .contactList {
   padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .contactList {
+    padding: 0px 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contactList {
+    padding: 0px 20%;
+  }
 }
 
 .title {
@@ -7,31 +22,30 @@
 }
 
 .list {
-  margin-bottom: 6px;
   display: flex;
   flex-grow: 1;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
-  padding: 2px;
+  padding: 2px 4px;
 }
 
 .text {
   display: inline-flex;
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
   color: #303030;
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 4px 8px;
-  margin-left: auto;
+
+  padding: 8px 16px;
+  margin-left: 16px;
   font-family: Unkempt;
   font-weight: 700;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   color: #fff;
   cursor: pointer;
   outline: none;
@@ -57,17 +71,27 @@
   height: 1px;
   flex-basis: auto;
   flex-grow: 1;
-  align-self: flex-end;
+  align-self: end;
 
   background: rgba(130, 130, 230, 0.5);
 }
 
-.descr {
+.btnText {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .descr {
+  .btnText {
     display: block;
+  }
+}
+
+.icon {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    margin-left: 8px;
   }
 }

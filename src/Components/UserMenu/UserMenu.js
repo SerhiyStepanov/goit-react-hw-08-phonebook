@@ -13,15 +13,15 @@ export default function UserMenu() {
       <span>
         <FiUserCheck className={s.avatar} />
       </span>
-      <span className={s.span}>{userEmail}</span>
+      <span className={s.spanEmail}>{userEmail}</span>
       <button
         className={s.button}
         type="button"
         onClick={() => dispatch(logOut())}
       >
-        <span className={s.sp}>Logout</span>
-        <span>
-          <FaSignOutAlt style={{ marginLeft: 8, display: "flex" }} />
+        <span className={s.btnText}>Logout</span>
+        <span className={s.icon}>
+          <FaSignOutAlt />
         </span>
       </button>
     </div>

@@ -86,9 +86,9 @@ export default function Login() {
           />
         </div>
         <button type="submit" className={s.button}>
-          <span className={s.sp}>Login</span>
-          <span>
-            <FaSignInAlt style={{ marginLeft: 8, display: "flex" }} />
+          <span className={s.btnText}>Login</span>
+          <span className={s.icon}>
+            <FaSignInAlt />
           </span>
         </button>
       </form>

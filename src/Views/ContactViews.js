@@ -33,6 +33,7 @@ export default function ContactViews() {
         Contacts
       </h2>
       <ContactList />
+
       <Stats />
     </div>
   );

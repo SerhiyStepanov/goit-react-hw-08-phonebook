@@ -96,9 +96,9 @@ export default function ContactForm() {
         </div>
 
         <button type="submit" className={s.button}>
-          Add
-          <span>
-            <FaFeatherAlt style={{ marginLeft: 8, display: "flex" }} />
+          <span className={s.btnText}>Add</span>
+          <span className={s.icon}>
+            <FaFeatherAlt />
           </span>
         </button>
       </form>

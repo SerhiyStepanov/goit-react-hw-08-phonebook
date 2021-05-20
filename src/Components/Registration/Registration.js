@@ -113,9 +113,9 @@ export default function Registration() {
           />
         </div>
         <button type="submit" className={s.button}>
-          <span className={s.sp}>Send</span>
-          <span>
-            <FaRegPaperPlane style={{ marginLeft: 8, display: "flex" }} />
+          <span className={s.btnText}>Send</span>
+          <span className={s.icon}>
+            <FaRegPaperPlane />
           </span>
         </button>
       </form>

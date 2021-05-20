@@ -27,7 +27,6 @@
   background-color: var(--orange-color);
   border-radius: 2px;
 
-  /* transform: scaleX(0%); */
   transition: width 300ms var(--cubic);
 }
 
@@ -39,7 +38,6 @@
 .link:hover:after,
 .link:focus:after {
   width: 100%;
-  /* transform: scaleX(100%); */
   transition: width 300ms var(--cubic);
 }
 
@@ -47,8 +45,8 @@
   color: var(--orange-color);
 }
 
-.avatar {
+.avatarRed {
   display: flex;
-  font-size: 20px;
+  font-size: 24px;
   color: #ff0000;
 }

@@ -6,7 +6,7 @@ export default function AuthNav() {
   return (
     <div className={s.container}>
       <span>
-        <FiUserX className={s.avatar} />
+        <FiUserX className={s.avatarRed} />
       </span>
       <nav>
         <NavLink

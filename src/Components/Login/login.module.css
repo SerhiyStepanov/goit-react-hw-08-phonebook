@@ -42,15 +42,15 @@
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 4px 8px;
+  padding: 8px 16px;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--font-family);
   font-weight: 700;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   color: #fff;
   cursor: pointer;
   outline: none;
@@ -68,6 +68,23 @@
     background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.sp {
+.btnText {
+  display: none;
   font-family: Unkempt;
+}
+
+@media screen and (min-width: 768px) {
+  .btnText {
+    display: block;
+  }
+}
+
+.icon {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    margin-left: 8px;
+  }
 }

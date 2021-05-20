@@ -6,14 +6,14 @@
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 4px 8px;
-  margin-left: 10px;
+  padding: 8px 16px;
+  margin-left: 16px;
   font-family: var(--font-family);
   font-weight: 700;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   color: #fff;
   cursor: pointer;
   outline: none;
@@ -31,25 +31,43 @@
     background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.span {
+.spanEmail {
   display: none;
   font-size: 14px;
   margin-left: 16px;
-  color: #303030;
+  text-transform: lowercase;
+  color: var(--activ-color);
 }
 
 @media screen and (min-width: 768px) {
-  .span {
+  .spanEmail {
     display: block;
   }
 }
 
 .avatar {
   display: flex;
-  font-size: 20px;
+  font-size: 24px;
   color: #33ff00;
 }
 
-.sp {
+.btnText {
+  display: none;
   font-family: Unkempt;
+}
+
+@media screen and (min-width: 768px) {
+  .btnText {
+    display: block;
+  }
+}
+
+.icon {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    margin-left: 8px;
+  }
 }

@@ -21,7 +21,7 @@ export default function HomeViews() {
       <FaBook
         style={{
           display: "block",
-          fontSize: "50px",
+          fontSize: "64px",
           marginTop: "30px",
           marginLeft: "auto",
           marginRight: "auto",
@@ -30,7 +30,7 @@ export default function HomeViews() {
         }}
       />
 
-      <p style={{ color: "var(--activ-color)" }}>
+      <p style={{ color: "var(--activ-color)", textAlign: "center" }}>
         If you want to access contacts:
       </p>
       <ul>

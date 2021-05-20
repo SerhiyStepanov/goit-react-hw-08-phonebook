@@ -46,15 +46,15 @@
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 4px 8px;
+  padding: 8px 16px;
   margin-left: auto;
   margin-right: auto;
   font-family: Unkempt;
   font-weight: 700;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   color: #fff;
   cursor: pointer;
   outline: none;
@@ -70,4 +70,24 @@
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
   transition: transform 250ms var(--cubic), box-shadow 250ms var(--cubic),
     background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+
+.btnText {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .btnText {
+    display: block;
+  }
+}
+
+.icon {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    margin-left: 8px;
+  }
 }

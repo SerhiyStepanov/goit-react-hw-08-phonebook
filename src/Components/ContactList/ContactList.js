@@ -24,18 +24,21 @@ export default function ContactList() {
           .sort((a, b) => a.name > b.name)
           .map(({ name, number, id }) => (
             <li key={id} className={s.list}>
-              <p className={s.text}>
-                {name}: {number}
-              </p>
+              <p className={s.text}>{name}:</p>
+
               <span className={s.dotten}></span>
+
+              <p className={s.text}>{number}</p>
+
               <button
                 className={s.button}
                 type="button"
                 onClick={() => onDeleteContact(id)}
               >
-                <span className={s.descr}>Delete</span>
-                <span>
-                  <FaTrash style={{ marginLeft: 8, display: "flex" }} />
+                <span className={s.btnText}>Delete</span>
+
+                <span className={s.icon}>
+                  <FaTrash />
                 </span>
               </button>
             </li>
