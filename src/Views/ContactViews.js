@@ -11,6 +11,7 @@ export default function ContactViews() {
         <h1
           style={{
             margin: "0px",
+            fontSize: "42px",
             fontFamily: "Unkempt",
             textAlign: "center",
             color: "#fffadc",
