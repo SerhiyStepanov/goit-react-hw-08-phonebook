@@ -49,48 +49,48 @@ export default function Login() {
 
   return (
     <div className={s.thumb}>
-      <b>
-        Enter please email and password
-        <br />
-      </b>
       <form className={s.form} onSubmit={onFormSubmit}>
-        <div className={s.container}>
-          <label htmlFor={loginEmailId} className={s.label}>
-            Email<span className={s.spanName}>Електронна адреса</span>
-          </label>
-          <input
-            type="email"
-            name="email"
-            value={email}
-            id={loginEmailId}
-            onChange={handleChange}
-            className={s.input}
-            placeholder="Enter email"
-            autoComplete="off"
-          />
-        </div>
+        <fieldset>
+          <legend>login</legend>
+          <div className={s.container}>
+            <label htmlFor={loginEmailId} className={s.label}>
+              Email<span className={s.spanName}>Електронна адреса</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              value={email}
+              id={loginEmailId}
+              onChange={handleChange}
+              className={s.input}
+              placeholder="Enter email"
+              autoComplete="off"
+            />
+          </div>
 
-        <div className={s.container}>
-          <label htmlFor={loginPasswordId} className={s.label}>
-            Password<span className={s.spanName}>Пароль</span>
-          </label>
-          <input
-            type="password"
-            name="password"
-            value={password}
-            id={loginPasswordId}
-            onChange={handleChange}
-            className={s.input}
-            placeholder="Enter password"
-            autoComplete="off"
-          />
-        </div>
-        <button type="submit" className={s.button}>
-          <span className={s.btnText}>Login</span>
-          <span className={s.icon}>
-            <FaSignInAlt />
-          </span>
-        </button>
+          <div className={s.container}>
+            <label htmlFor={loginPasswordId} className={s.label}>
+              Password<span className={s.spanName}>Пароль</span>
+            </label>
+            <input
+              type="password"
+              name="password"
+              value={password}
+              id={loginPasswordId}
+              onChange={handleChange}
+              className={s.input}
+              placeholder="Enter password"
+              autoComplete="off"
+            />
+          </div>
+
+          <button type="submit" className={s.button}>
+            <span className={s.btnText}>Login</span>
+            <span className={s.icon}>
+              <FaSignInAlt />
+            </span>
+          </button>
+        </fieldset>
       </form>
     </div>
   );

@@ -58,49 +58,53 @@ export default function ContactForm() {
   return (
     <>
       <form className={s.form} onSubmit={onFormSubmit}>
-        <div className={s.container}>
-          <label htmlFor={inputNameId} className={s.label}>
-            Name <span className={s.spanName}>name</span>
-          </label>
-          <input
-            type="text"
-            name="name"
-            id={inputNameId}
-            value={name}
-            onChange={onInputChange}
-            className={s.input}
-            placeholder="Enter name"
-            autoComplete="Off"
-          />
-        </div>
+        <fieldset>
+          <legend>New contact</legend>
 
-        <div className={s.container}>
-          <label htmlFor={inputNumberId} className={s.label}>
-            Number
-            <span className={s.ioIosPhonePortrait}>
-              <IoIosPhonePortrait />
+          <div className={s.container}>
+            <label htmlFor={inputNameId} className={s.label}>
+              Name <span className={s.spanName}>name</span>
+            </label>
+            <input
+              type="text"
+              name="name"
+              id={inputNameId}
+              value={name}
+              onChange={onInputChange}
+              className={s.input}
+              placeholder="Enter name"
+              autoComplete="Off"
+            />
+          </div>
+
+          <div className={s.container}>
+            <label htmlFor={inputNumberId} className={s.label}>
+              Number
+              <span className={s.ioIosPhonePortrait}>
+                <IoIosPhonePortrait />
+              </span>
+            </label>
+            <input
+              type="tel"
+              name="number"
+              id={inputNumberId}
+              value={number}
+              onChange={onInputChange}
+              className={s.input}
+              placeholder=" XXX XXX XXXX "
+              // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              pattern="\d{3} \d{3} \d{4}"
+              minLength="10"
+            />
+          </div>
+
+          <button type="submit" className={s.button}>
+            <span className={s.btnText}>Add</span>
+            <span className={s.icon}>
+              <FaFeatherAlt />
             </span>
-          </label>
-          <input
-            type="tel"
-            name="number"
-            id={inputNumberId}
-            value={number}
-            onChange={onInputChange}
-            className={s.input}
-            placeholder=" XXX XXX XXXX "
-            // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            pattern="\d{3} \d{3} \d{4}"
-            minLength="10"
-          />
-        </div>
-
-        <button type="submit" className={s.button}>
-          <span className={s.btnText}>Add</span>
-          <span className={s.icon}>
-            <FaFeatherAlt />
-          </span>
-        </button>
+          </button>
+        </fieldset>
       </form>
     </>
   );

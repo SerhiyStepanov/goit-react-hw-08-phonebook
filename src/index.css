@@ -21,6 +21,11 @@ b {
   color: #303030;
 }
 
+legend {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
 :root {
   --primary-color: rgb(130, 130, 230);
   --activ-color: rgb(65, 65, 120);

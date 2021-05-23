@@ -1,4 +1,5 @@
 import { FaBook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import ThumbRepeat from "../Components/ThumbRepeat/ThumbRepeat";
 
 export default function HomeViews() {
@@ -33,14 +34,15 @@ export default function HomeViews() {
       <p style={{ color: "var(--activ-color)", textAlign: "center" }}>
         If you want to access contacts:
       </p>
-      <ul>
+      <ol>
         <li style={{ color: "var(--activ-color)" }}>
-          <p style={{ color: "var(--activ-color)" }}>Register.</p>
+          <i style={{ color: "var(--activ-color)" }}>Register.</i>
         </li>
+
         <li style={{ color: "var(--activ-color)" }}>
-          <p style={{ color: "var(--activ-color)" }}>Login.</p>
+          <i style={{ color: "var(--activ-color)" }}>Login.</i>
         </li>
-      </ul>
+      </ol>
     </div>
   );
 }
