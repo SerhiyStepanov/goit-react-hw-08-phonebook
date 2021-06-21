@@ -51,21 +51,26 @@
   font-weight: 700;
   border: none;
   border-radius: 8px;
-  color: #fff;
   cursor: pointer;
   outline: none;
-  background-color: var(--primary-color);
-  transition: transform 250ms var(--cubic), box-shadow 250ms var(--cubic);
+
+  color: var(--primary-color);
+  background-color: #fff;
+  transform: scale(1.04);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
+
+  transition: transform 3000ms var(--cubic), box-shadow 300ms var(--cubic);
 }
 
 .button:hover,
 .button:focus {
-  color: var(--primary-color);
-  background-color: #fff;
-  transform: scale(1.06);
-  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
-  transition: transform 250ms var(--cubic), box-shadow 250ms var(--cubic),
-    background-color 250ms var(--cubic), color 250ms var(--cubic);
+  color: #fff;
+  background-color: var(--primary-color);
+  transform: scale(1);
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.5);
+
+  transition: transform 300ms var(--cubic), box-shadow 300ms var(--cubic),
+    background-color 300ms var(--cubic), color 300ms var(--cubic);
 }
 
 .btnText {
