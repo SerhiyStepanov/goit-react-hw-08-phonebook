@@ -29,7 +29,7 @@ legend {
 :root {
   --primary-color: rgb(130, 130, 230);
   --activ-color: rgb(65, 65, 120);
-  --orange-color: rgb(255, 140, 0);
+  --orange-color: rgb(250, 100, 50);
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --font-family: url("https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap");
 }
